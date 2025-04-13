@@ -1,0 +1,39 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.mensaje {
+    background-color: #003366;
+    border: 2px solid #003366;
+    padding: 20px 30px;
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    animation: fadeOut 5s forwards 3s;
+    transition: transform 0.3s ease;
+}
+
+.mensaje:hover {
+    transform: scale(1.02);
+}
+
+
+.link {
+    display: block;
+    margin-top: 15px;
+    color: white;
+    text-decoration: underline;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: gray;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sugerencias y Reclamos - Local</title>
+  <link rel="stylesheet" href="stylereclamos.css">
+  <link rel="shortcut icon" href="img/webubo.jpg" />
+</head>
+<body>
+    <header>
+        <div class="contenedor container">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt="Logo UBO"></a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Carreras</a></li>
+                    <li><a href="#">Admisión</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <div class="reclamos-text"><li><a href="reclamos.html" class="btn-reclamos">RECLAMA AQUI</a></li></div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="contenedor-form ">
+        <div class="informacion-content ">
+            <div class="informacion-txt">
+                <h1>Formulario de Reclamos y Sugerencias</h1>
+            </div>
+            <div class="informacion-img">
+                <img src="img/1791-Portada-Sistema-PQRS.jpg" alt="">
+            </div>
+        </div>
+    <form action="procesar_formulario.php" method="post">
+        <h2>Reclamos y Sugerencias</h2>
+        <div class="contenedor-text">
+        <p>Tu opinión es importante para nosotros. Por eso, hemos dispuesto este canal para recibir tus sugerencias, reclamos y comentarios en el siguiente formulario.</p>
+        </div>
+
+        <label for="rut">RUT:</label>
+        <input type="text" id="rut" name="rut" required>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <span>Debe contener solo caracteres alfabeticos</span>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+        <span>Debe contener solo caracteres alfabeticos</span>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <span>Debe ingresar e-mail valido</span>
+
+        <label for="sede">Sede:</label>
+        <select id="sede" name="sede" required>
+        <option value="">Selecciona una sede</option>
+        <option value="Casa Central">Casa Central</option>
+        <option value="Rondizzoni 1">Rondizzoni 1</option>
+        <option value="Rondizzoni 1">Rondizzoni 2</option>
+        </select>
+
+        <div class="tipo"><br>
+        <label for="tipo">Tipo:</label>
+        <div class="radio-group">
+        <input type="radio" id="sugerencia" name="tipo" value="Sugerencia" required>
+        <label for="sugerencia">Sugerencia</label>
+        <input type="radio" id="reclamo" name="tipo" value="Reclamo" required>
+        <label for="reclamo">Reclamo</label>
+        </div>
+        </div>
+
+        <label for="relacion">Relación con la institución:</label>
+        <select id="relacion" name="relacion" required>
+        <option value="">Selecciona</option>
+        <option value="Estudiante">Estudiante</option>
+        <option value="Egresado">Egresado</option>
+        </select>
+
+        <label for="facultad">Facultad</label>
+        <select id="facultad" name="facultad" required>
+        <option value="">Selecciona</option>
+        <option value="Facultad de Ingeniería, Ciencia y Tecnologia">Facultad de Ingenieria, Ciencia y Tecnologia</option>
+        <option value="Facultad de Ciencias Humanas">Facultad de Ciencias Humanas</option>
+        <option value="Facultad de Ciencias de la Salud">Facultad de Ciencias de la Salud</option>
+        <option value="Facultad de Ciencias Medicas">Facultad de Ciencias Medicas</option>
+        <option value="Programas de Magister">Programas de Magister</option>
+
+        </select>
+        <label for="asociado">Asociado a:</label>
+        <select id="asociado" name="asociado" required>
+        <option value="">Selecciona</option>
+        <option value="Aulas virtuales">Aulas virtuales</option>
+        <option value="MiIntranet">Intranet</option>
+        <option value="Docente">Docente</option>
+        <option value="Jefe o Director de carrera">Jefe o Director de carrera</option>
+        <option value="Infraestructura">Infraestructura</option>
+        <option value="DAE">DAE</option>
+        <option value="DAO">DAO</option>
+        <option value="Otro">Otro</option>
+        </select>
+
+        <label for="contexto">Descripción:</label>
+        <textarea id="contexto" name="contexto" maxlength="800" required></textarea>
+
+        <br>
+        <label for="subir">Sube un archivo</label><br>
+        <input type="file" name="subir" id="subir"><br><br>
+
+        <label>
+        <input type="checkbox" name="terminos" required>
+        Acepto los términos y condiciones
+        </label>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+    </div>
+    <footer>
+        <div class="footer-container ">
+            <div class="footer-links">
+                <div class="link-img">
+                    <img src="img/logo.png">
+                    <div class="socials-2">
+                        <h4>Síguenos</h4>
+                        <a href="https://www.instagram.com/ubohiggins/" target="_blank"><img src="img/instagram.png" alt="Redes sociales"></a>
+                        <a href="https://twitter.com/UBOHiggins" target="_blank"><img src="img/gorjeo.png" alt="Redes sociales"></a>
+                        <a href="https://www.facebook.com/UBOHiggins" target="_blank"><img src="img/facebook.png" alt="Redes sociales"></a>
+                    </div>
+                </div>
+            <div class="footer-seccion">
+            <h4>Contacto</h4>
+            <p> Dirección: Av. Universidad 1234, Santiago, Chile</p>
+            <p> Teléfono: +56 2 1234 5678</p>
+            <p> Correo: contacto@universidadx.cl</p>
+            </div>   
+
+            <div class="footer-seccion">
+                <h4>Sitio Universidad</h4>
+                <ul>
+                    <li><a href="#">Admisión</a></li>
+                    <li><a href="#">Carreras</a></li>
+                    <li><a href="#">Postgrados</a></li>
+                    <li><a href="reclamos.html">Reclamos</a></li>
+                    <li><a href="#">Biblioteca</a></li>
+                </ul>
+            </div>
+            <div class="footer-seccion">
+                <h4>Acreditaciones</h4>
+                <img src="img/images.png" alt="Acreditacion">
+            </div>
+        </div>
+    </div>
+    </footer>
+    <div class="footer-derechos">
+        <p>&copy; 2025 Universidad X. Todos los derechos reservados.</p> 
+    </div>
+</body>
+</html>
